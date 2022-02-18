@@ -231,7 +231,7 @@ int main() {
 
 
 
-// Problem 
+//Another way 
 
 /*
 

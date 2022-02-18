@@ -46,7 +46,7 @@ i/p:-
 o/p:-
 2 3 3 5 6 6
 */
-
+/*
 #include<iostream> 
 #include<set>
 using namespace std;
@@ -64,3 +64,5 @@ int main(){
     cout<<endl;
     return 0;
 }
+
+*/
