@@ -5,7 +5,7 @@
 
 /*
 
-Today i Participate in Weekly Contest and Solve one Problem b
+Today i Participate in Weekly Contest and Solve one Problem 
 */
 
 //  Code 
@@ -37,7 +37,7 @@ public:
 
 */
 
-//                                      Disscussion SOlution What i analyze 
+//                                      Disscussion SOlution 
 
 //  Optimized than above --> Dissussion SOlution
 
@@ -101,5 +101,6 @@ public:
       return ((num+1)/2) - 1;                           // (nums-1)/2
   }
 };
+
 */
 
