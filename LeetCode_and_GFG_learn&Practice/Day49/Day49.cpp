@@ -111,3 +111,63 @@ bool threeConsecutiveOdds(vector<int>& arr) {
 }
 
 */
+
+
+// 1732. Find the Highest Altitude
+
+/*
+
+class Solution {
+public:
+    int largestAltitude(vector<int>& gain) {
+        vector<int>prefixSum;
+        int sum = 0;
+        for(int i=0;i<gain.size();i++){
+            sum += gain[i];
+            prefixSum.push_back(sum);
+        }
+        int maxi = *max_element(begin(prefixSum),end(prefixSum));
+        if(maxi<0){
+            maxi = 0;
+        }
+        return maxi;
+    }
+};
+
+*/
+
+
+// another way
+
+/*
+
+class Solution {
+public:
+    int largestAltitude(vector<int>& gain) {
+        int max_alt=0;
+        int curr_alt=0;
+        for(int i=0;i<gain.size();i++){
+            curr_alt+=gain[i]; 
+            max_alt=max(curr_alt, max_alt);
+        }
+        return max_alt;
+    }
+};
+
+
+*/
+
+
+// In javascript
+
+/*
+
+var largestAltitude = function(gain) {
+    var maxAlt = 0, currAlt = 0;
+    for(var i = 0;i<gain.length;i++){
+        currAlt += gain[i];
+        maxAlt = Math.max(currAlt,maxAlt);
+    }
+    return maxAlt;
+};
+*/
