@@ -81,3 +81,34 @@ public:
 };
 */
 
+
+
+
+
+
+// Problem:- 2202. Maximize the Topmost Element After K Moves
+
+
+
+
+
+
+//                      Discussion solution
+
+/*
+class Solution {
+public:
+    int maximumTop(vector<int>& nums, int k) {
+        if(nums.size()==1 && k%2==1)
+            return -1;
+        int maxi = 0;
+        for(int i=0;i<k-1 && i<nums.size();i++)
+            maxi = max(maxi,nums[i]);
+        if(k<nums.size()){
+            maxi = max(maxi,nums[k]);
+        }
+        return maxi;
+    }
+};
+
+*/
