@@ -946,6 +946,7 @@ int main(){
 
 // How to avoid it by using virtual funtion in Employee classs
 
+/*
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -1026,3 +1027,68 @@ int main(){
     e2->work();
     return 0;
 }
+
+*/
+
+
+
+//                                      Leetcode
+
+// Problem:- Linked List Cycle
+
+
+// It's a classic algo for detecting cycles in a linked list. We use two pointers to traverse the list: 
+// The first one is moving one node at the time and the second two nodes at the time. If there is a cycle, 
+// sooner or later pointers will meet and we return true. If the fast pointer reached the end of the list, 
+// that means there is no cycle and we can return false.
+
+// For reference: Floyd's Cycle Detection Algorithm
+
+/*
+EXPLANATION
+
+- Floyd’s Cycle-Finding Algorithm // fast slow approach // 2 pointers // "tortoise and the hare algorithm"
+
+- Approach: This is the fastest method and has been described below:
+
+- Traverse linked list using two pointers.
+
+- Move one pointer(slow_p) by one and another pointer(fast_p) by two.
+
+- If these pointers meet at the same node then there is a loop. If pointers do not meet then linked list 
+doesn’t have a loop.
+*/
+// Time: O(n) - for traversing
+// Space: O(1) - nothing stored
+
+/*
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */
+ /*
+class Solution {
+public:
+    bool hasCycle(ListNode *head) {
+        if(head == NULL)
+            return false;
+            
+        ListNode* slowPtr = head;
+        ListNode* fastPtr = head;
+        
+        while(fastPtr != NULL && fastPtr->next != NULL){
+            slowPtr = slowPtr->next;
+            fastPtr = fastPtr->next->next;
+            if(slowPtr == fastPtr)
+                return true;
+        }
+        return false;
+    }
+};
+
+*/
+
