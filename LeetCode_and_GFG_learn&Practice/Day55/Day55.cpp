@@ -5,11 +5,9 @@
 // Insertion of Node at ith position in C++
 
 
-
-
 /*
 
-void insertAtNth(int data  , int n){
+void insertAtNth(int data, int n){
     Node* temp1 = new Node();
     temp1->data = data;
     temp1->next = NULL;

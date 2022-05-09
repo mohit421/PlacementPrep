@@ -90,7 +90,8 @@ void Delete(int n){
     struct Node* temp1 = head;
     if(n==1){
         head = temp1->next;
-        free(temp1);
+        // free(temp1);
+        delete temp1;
         return;
     }
     int i;
@@ -99,7 +100,8 @@ void Delete(int n){
     }
     struct Node* temp2 = temp1->next;
     temp1->next = temp2->next;
-    free(temp2);
+    // free(temp2);
+    delete temp2;
 }
 void Print(){
     Node* temp = head;
@@ -123,4 +125,7 @@ int main(){
 }
 
 */
+
+
+
 
